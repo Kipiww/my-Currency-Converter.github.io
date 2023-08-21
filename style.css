@@ -1,0 +1,191 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    height: 100vh;
+    width: auto;
+    background: #a18cd1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.container{
+    background: #fff;
+    height: 450px;
+    width: auto;
+    padding: 20px;
+    border-radius: 15px;
+}
+
+/*Title*/
+ header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+ }
+ header i{
+    font-size: 100px;
+    color: #a18cd1;
+ }
+ header h1{
+    margin-top: 30px;
+ }
+
+/*Input Field*/
+.amountField {
+    margin-top: 20px;
+}
+.amountField p{
+    font-size: 12px;
+    
+}
+.amountField input{
+    width: 100%;
+   background: transparent;
+    border: none;
+    outline: none;
+    border-bottom: #000 1px solid;
+    height: 30px;
+    font-size: 12px;
+}
+.amountField input::placeholder{
+    margin-left: 10px;
+}
+
+/*converter*/
+.converter{
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+}
+.converter select{
+    margin:0px 20px;
+    width: 150px;
+    border: none;
+    padding: 7px;
+    background: #a18cd1;
+    color: #fff;
+    border-radius: 10px;
+    outline: none;
+}
+.converter i {
+    margin: 8px 0px 20px;
+    font-size: 20px;
+    cursor: pointer;
+
+}
+.converter i:hover {
+    color: #a18cd1;
+    transition: .2s;
+}
+.converter option{
+    background: #fff;
+    color: #000;
+    border: none;
+    outline: none;
+}
+    
+/*exhange button*/
+.convert{
+    margin-top: 10px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+.convert button{
+    width: 90%;
+    background: #a18cd1;
+    border: none;
+    padding: 5px;
+    color: #fff;
+    border-radius: 10px;
+    cursor: pointer;
+    outline: none;
+}
+/*result*/
+.result{
+    margin-top: 7px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+.result input{
+    width: 88%;
+    background: #a18cd1;
+    border: none;
+    padding: 5px;
+    color: #fff;
+    border-radius: 10px;
+    cursor: pointer;
+    outline: none;
+    justify-content: center;
+    cursor: default;
+    text-align: center;
+}
+
+
+/*Make it Responsive in tablets and Cellphones*/ 
+/*Cellphones*/
+@media (199px <= width <= 300px) and (orientation:portrait)  {
+    body{background: #fff; width: 200px;}
+    .container{background: #fff;width: auto; margin-left: 125px;}
+
+/*Title*/
+    header i{font-size: 20px;color: #a18cd1;}
+    header h1{font-size: 15px;}
+
+/*Input Field*/
+    .amountField {margin: 5px 15px ;}
+    .amountField p{font-size: 8px;}
+    .amountField input{width: 200px;height: 20px;font-size: 8px;align-items: center;}
+
+/*converter*/
+    .converter select{ width: 60px; font-size: 11px; padding: 3px;}
+    .converter i{font-size: 10px;}
+
+/*exhange button*/
+.convert button{width: 150px; font-size: 10px;}
+.result input{width: 155px;font-size: 10px;}
+    
+    
+
+}
+
+/*Tablets*/
+@media screen and (301px <= width <= 444px) and (orientation: portrait) {
+    body{background: #fff; width: 300px;}
+    .container{background: #fff;width: auto;}
+
+/*Title*/
+    header i{font-size: 50px;color: #a18cd1;}
+    header h1{font-size: 20px;}
+
+/*Input Field*/
+    .amountField {margin: 10px 20px ;}
+    .amountField p{font-size: 10px;}
+    .amountField input{width: 250px;height: 20px;font-size: 10px;align-items: center;}
+
+/*converter*/
+    
+    .converter select{ width: 100px; font-size: 12px; padding: 5px;}
+    .converter i{font-size: 15px;}
+
+/*exhange button*/
+    .convert button{width: 250px; font-size: 12px;}
+    .result input{width: 245px;font-size: 12px;}
+}
+
+
+
+
+

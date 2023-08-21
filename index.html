@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curency Converter | Kipiww</title>
+    <link rel="stylesheet" href="style.css" defer>
+    <script src="script.js"  type="module"  ></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"/>
+</head>
+<body>
+    <section class="container">
+        <header class="title"> 
+            <i class="fa-solid fa-money-bill-transfer"></i>
+            <h1>Currency Converter</h1>
+        </header>
+        <div class="amountField">
+            <p>Amount:</p>
+            <input type="text" id="input" autocomplete="off" placeholder="1">
+        </div>
+      <div class="converter">
+        <div class="from">
+            <select id="fromCurrency">
+                
+            </select>
+           
+        </div>
+      
+            <i class="fa-solid fa-arrow-right-arrow-left" id="swap"></i>
+
+        <div class="to">
+            <select id="toCurrency">
+               
+                
+            </select>
+        </div>
+      </div>
+        <div class="convert">
+            <button type="button" id="convertBtn">Exchange</button>
+        </div>
+        <div class="result">
+            <input type="text" readonly id="result" value="1 USD = 1 USD">
+        </div>
+    </section>
+</body>
+<script src="currencies.js" type="module"></script>
+</html>
